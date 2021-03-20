@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { v4 as uuidv4 } from 'uuid';
+import "./NewTodoForm.css"
 
 
 export default class NewTodoForm extends Component {
@@ -23,7 +24,7 @@ export default class NewTodoForm extends Component {
     }
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form clasName="NewTodoForm" onSubmit={this.handleSubmit}>
                 <labal htmlFor="task">New Todo</labal>
                 <input type="text"
                     id="task"
